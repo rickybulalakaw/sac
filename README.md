@@ -9,3 +9,9 @@ The system administrator will have to identify the user who will be determined a
 - Local SWDO Staff - Can create main beneficiaries and members, and edit records and tag beneficiaries for payment
 - Encoders (Default) - Can add data of main beneficiaries
 - IT Support - Can view reports and system activities
+
+# Installation
+
+Upload the files to a PHP-hosting server, and import the dswd_sac.sql file into your MySQL server.
+
+Adjust the database settings in the db.php files as necessary.
