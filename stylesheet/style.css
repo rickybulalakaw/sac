@@ -1,0 +1,311 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border: spacing 1;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left:auto; 
+    margin-right:auto;
+    
+}
+
+th {
+    font-family: Arial;
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightgray;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+    height: 20px;
+}
+
+h1 {
+    font-family: Arial, "Times New Roman", Times, serif;
+    font-size: 25px; 
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Arial;
+    font-size: 16px; 
+    padding: 0 0 15px;
+}
+
+body {
+    background-color: #eee;
+}
+
+ul {
+    
+    margin-right: 5px;
+    
+}
+
+ul li {
+    display: inline-block;
+    float: left;
+    line-height: 30px;
+}
+
+ul li a {
+    display: block;
+    font-size: 16px;
+    font-family: Arial;
+    color: #1e1e1e;
+    padding: 0 10px;
+    vertical-align: center;
+}
+
+ul li a:hover {   
+    color: red;
+}
+
+br {
+    content: " ";
+    display: block;    
+  }
+
+.div-center {
+    text-align: center;
+}
+
+.pagetitle {
+    
+    text-emphasis: strong;
+    text-align: center;
+    line-height: 50px;
+}
+
+.grid {  
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "navigation"
+    "header"
+    "content"
+    "footer";   
+    grid-gap: 10px;
+}
+
+.title {    
+    grid-area: title;
+    font-size: 20px;
+    font-family: Arial;
+    text-align: left;
+    text-align: justify;
+    margin-right: 3px;
+}
+
+.header {    
+    grid-area: header;
+    font-family: Arial;
+    text-align: justify;
+    margin-right: 3px;
+}
+
+.content {    
+    grid-area: content;
+    text-align: justify;
+    margin-right: 3px;
+    margin-left: 3px;
+    width: 100%;
+    
+}
+
+.navigation {
+    grid-area: navigation;
+    width: 100%;
+    background-color: mistyrose;
+}
+
+.sidebar {    
+    grid-area: sidebar;
+    margin-right: 3px;
+    font-weight: bold; 
+    /* display:block; */
+    /* background-color: turquoise; */
+    
+}
+
+
+.footer {    
+    grid-area: footer;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+
+
+
+
+/* .grid div:nth-child(odd) {
+   
+}
+
+.grid div:nth-child(even) {
+    
+} */
+
+@media screen and (max-width:736px) {
+
+    .grid {
+        display: grid;
+        margin: 0 auto; 
+        width: 100%;
+        grid-template-columns: 30% 1fr;
+        grid-template-areas: 
+        "title title"
+        "navigation header"
+        "navigation content"
+        "navigation sidebar"
+        "navigation footer";
+
+    table, tr, td {       
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left:auto; 
+        margin-right:auto;
+    }
+
+    .title {    
+        grid-area: title;
+        font-size: 40px;
+        font-family: Arial;
+        text-align: center;
+    }
+
+    ul li a {        
+        font-size: 12px;        
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .header {    
+        grid-area: header;
+        font-family: Arial;
+        text-align: justify;
+        margin-right: 3px;       
+    }
+
+    h1 {
+        font-size: 35px;
+        padding-bottom: 14px;
+    }
+
+
+}

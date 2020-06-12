@@ -1,0 +1,289 @@
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^beneficiaryregistered/([0-9a-zA-Z_-]+)/([0-9a-zA-Z_-]+)/([0-9]+) beneficiaryregistered.php?lname=$1&fname=$2&enteredby=$3 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^activateuser/([0-9]+) activateuser.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^addmaintomember/([0-9]+) addmaintomember.php?memberprimaryid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^editbenrecord/([0-9]+) editbenrecord.php?id=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^editbarangays editbarangays.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^delbenrecord/([0-9]+)/([0-9]+) delbenrecord.php?id=$1&bid=$2 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewbeneficiary/([0-9]+) viewbeneficiary.php?benid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^getbenbrgy/([0-9]+) getbenbrgy.php?bid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^editbenbrgy/([0-9]+) editbenbrgy.php?bid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^getbenbrgynonsac/([0-9]+) getbenbrgynonsac.php?bid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^addbeneficiary addbeneficiary.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^search search.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewmasterlist viewmasterlist.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewsacbybrgy viewsacbybrgy.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewnonsacbybrgy viewnonsacbybrgy.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewsumbysex viewsumbysex.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^signout signout.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^uploadphoto/([0-9a-zA-Z_-]+)/([0-9]+)/([0-9a-zA-Z_-]+) uploadphoto.php?entity=$1&entityid=$2&actiontype=$3 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^photouploaded photouploaded.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^beneficiaryregistered/([0-9]+) beneficiaryregistered.php?bid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^manageusers manageusers.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^systemrecord systemrecord.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^deactivateuser/([0-9]+) deactivateuser.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^assignadmin/([0-9]+) assignadmin.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^makemswdo/([0-9]+) makemswdo.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^addmember/([0-9]+) addmember.php?benid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^makeexecutive/([0-9]+) makeexecutive.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^makeits/([0-9]+) makeits.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^removespecial/([0-9]+) removespecial.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewprogress/([0-9a-zA-Z_-]+) viewprogress.php?eventtag=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewdailyprogressgraph/([0-9a-zA-Z_-]+) viewdailyprogressgraph.php?eventtag=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^recordsacben/([0-9]+)/([0-9]+)/([0-9a-zA-Z_-]+) recordsacben.php?beneficiaryid=$1&barangayid=$2&actiontype=$3 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^createaccount createaccount.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^signin signin.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^notsufficientrights notsufficientrights.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^makemswdoa/([0-9]+) makemswdoa.php?newid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^beneficiaryupdated/([0-9]+) beneficiaryupdated.php?bar=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^generatepayroll/([0-9a-zA-Z_-]+)/([0-9]+) generatepayroll.php?actiontype=$1&barangayid=$2 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^genpayroll genpayroll.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^admindelbenrecord/([0-9]+)/([0-9]+) admindelbenrecord.php?barangayid=$1&beneficiaryid=$2 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^recordpaybrgyprocess/([0-9]+) recordpaybrgyprocess.php?barangayid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^admindelbenpayout/([0-9]+)/([0-9]+)/([0-9]+) admindelbenpayout.php?barangayid=$1&beneficiaryid=$2&imagerecid=$3 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^balikprobinsya balikprobinsya.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^schedulereturn schedulereturn.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^generatedswddb/([0-9]+)/([0-9]+) generatedswddb.php?page=$1&limit=$2 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^viewbarangay/([0-9]+) viewbarangay.php?bid=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteRule ^deletemember/([0-9]+)/([0-9]+) deletemember.php?memberid=$1&bid=$2 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
