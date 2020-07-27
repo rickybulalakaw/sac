@@ -39,7 +39,7 @@
                 $db_fullname = $row['fullname'];     
                 
                 if(password_verify($pw, $db_password) == TRUE) {
-                    $_SESSION['sac_id'] = $id;
+                    $_SESSION['sac_id'] = $id; // sac_id
                     
                     $_SESSION['fullname'] = $db_fullname;         
 

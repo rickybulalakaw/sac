@@ -41,8 +41,6 @@ $dbdob = $row['dob'];
 $dbbarangayid = $row['barangay'];
 // $db->query($getbeneficiarydetails);
 
-
-
 $deletebeneficiary = "DELETE FROM beneficiary where id = $recordid";
 $process = mysqli_query($db, $deletebeneficiary);
 

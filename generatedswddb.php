@@ -65,6 +65,7 @@ if(!isset($_GET['limit'])){
         starttable();
         startrow();
         
+        columnhead("Page Counter");
         columnhead("Row Indicator");
         // columnhead("COVID Municipality Series");
         columnhead("Barcode");
@@ -97,6 +98,7 @@ if(!isset($_GET['limit'])){
         columnhead("Pangalan ng LSWDO");
 
         endrow();
+        $i = 1;
 
         foreach($process as $row){
             startrow();
@@ -105,6 +107,7 @@ if(!isset($_GET['limit'])){
             } else {
                 $rowindicator = "M";
             }
+            celltext($i);
             columncenter($rowindicator);
             // columncenter("Something");
             $municpalityseries = "PH-COVID-19-015511000-";
@@ -118,7 +121,6 @@ if(!isset($_GET['limit'])){
             } else {
                 celltext($row['Ext']);
             }
-
 
             
             celltext($row['ReltoHH']);
@@ -195,6 +197,7 @@ if(!isset($_GET['limit'])){
             celltext($row['PunongBarangay']);
             celltext("Kimberly Basco");
             endrow();
+            $i++;
 
         }
         endtable();

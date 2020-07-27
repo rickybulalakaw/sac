@@ -97,7 +97,7 @@ if(isset($_POST['Revise'])) {
 
         $result = mysqli_stmt_get_result($stmt);
 
-        // Record revision to system record table
+        // Record revision to system record table 
 
         $recordrevision = "INSERT INTO systemrecord (`user`, `object`, `record`) VALUES ($revisedby, $recordid, 'Revised record of beneficiary to $lastname, $firstname, $middlename / Sex=$sex / DOB=$dob / CivilStatus = $civilstatus / Address = $address / BarangayID = $barangay / BarCode = $barcode')";
         $process2 = $db->query($recordrevision);

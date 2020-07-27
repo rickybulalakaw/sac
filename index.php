@@ -29,7 +29,7 @@ navigationbar();
             <div class="row">
                 <div class="col"> 
 
-                    <p>Welcome, <?php echo $fullname ?>.</p>
+                    <!-- <p>Welcome, <?php echo $fullname ?>.</p> -->
                     <p>This website has been developed for recording and reporting beneficiary households for the DSWD Social Amelioration Program.</p>
                     
                 </div>

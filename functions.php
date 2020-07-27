@@ -823,7 +823,7 @@ function getbenbrgy($barangayid){
             if($rights == "MSWDO") {
                 columnheadspan("Action", 4);             
             } elseif($rights=="MSWDOAdmin") {
-                columnheadspan("Action",5);
+                columnheadspan("Action",6);
             } elseif ($rights == "Admin") {
                 columnheadspan("Action",4);
             }
@@ -856,6 +856,7 @@ function getbenbrgy($barangayid){
                 $editcolumndisplay = array("MSWDO", "MSWDOAdmin", "Admin");
     
                 if(in_array($_SESSION['rights'], $editcolumndisplay)){
+                    echo "<td align='center'><a class='btn btn-primary  btn-sm' href='/sac2/viewbeneficiary/".$row['BeneficiaryID']."' role='button'>View record</a></td>";
                     echo "<td align='center'><a class='btn btn-primary  btn-sm' href='/sac2/editbenrecord/".$row['BeneficiaryID']."' role='button'>Edit record</a></td>";
 
                     if ($row['SACBatch1Date'] != "") { // if already received sacbatch 1
